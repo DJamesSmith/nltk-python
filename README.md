@@ -75,7 +75,7 @@ pip install nltk
 ### Run it
 
 ```bash
-python nltk_showcase.py
+python nltk_program.py
 ```
 
 The first run downloads the required NLTK data packages automatically, so it can take a few extra minutes. Later runs reuse the downloaded data and start almost instantly.
@@ -88,7 +88,8 @@ nltk-python/
 │   ├── Output_1.png
 │   ├── Output_2.png
 │   └── Output_3.png
-├── nltk_showcase.py
+├── nltk_downloaded_resource_location.py
+├── nltk_program.py
 └── README.md
 ```
 
