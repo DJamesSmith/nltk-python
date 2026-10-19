@@ -1,0 +1,16 @@
+*.DS_Store
+
+
+# Python bytecode and caches
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments (if you decide to use one later)
+.venv/
+venv/
+ENV/
+env/
+
+# Local NLTK data directories (if downloaded locally into the project)
+nltk_data/
