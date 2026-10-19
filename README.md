@@ -8,15 +8,31 @@ A guided, end-to-end tour of classic Natural Language Processing in Python using
 
 The program is written to be read and explained. Every phase prints its own labelled section, so you can follow exactly what happens to the text at each step.
 
-> 🎥 **Watch the full walkthrough on YouTube:** [NLTK Tutorial: Natural Language Processing in Python, Step by Step](https://youtube.com/watch?v=YOUR_VIDEO_ID)
+> 🎥 **Watch the full walkthrough on YouTube:** [NLTK Tutorial: Natural Language Processing in Python, Step by Step](https://www.youtube.com/watch?v=HV3T0JRl4r4)
 
 ---
 
 ## Output preview
 
-![Terminal output of nltk_showcase.py showing all eight NLP phases](docs/terminal-output.png)
+Running the program prints each phase as its own labelled section. The full output is shown below in three parts.
 
-<p align="center"><sub><i>Terminal output of <code>nltk_showcase.py</code>: each phase prints its own section, from tokenization through to cosine similarity. <a href="docs/terminal-output.png">View full-size screenshot</a></i></sub></p>
+### Part 1: Tokenization, stopwords and stemming vs lemmatization
+
+![Terminal output part 1: input text, tokenization, stopword removal and stemming vs lemmatization](assets/Output_1.png)
+
+<p align="center"><sub><i>The input text is split into sentences and word tokens, filtered for stopwords, and reduced to stems and lemmas. <a href="assets/Output_1.png">View full-size screenshot</a></i></sub></p>
+
+### Part 2: POS tagging, named entities and word frequency
+
+![Terminal output part 2: part-of-speech tags, named entity tree and frequency distribution](assets/Output_2.png)
+
+<p align="center"><sub><i>Each word receives a Penn Treebank tag, named entities such as people and organizations are extracted, and the most frequent words are counted. <a href="assets/Output_2.png">View full-size screenshot</a></i></sub></p>
+
+### Part 3: Sentiment analysis and cosine similarity
+
+![Terminal output part 3: VADER sentiment scores and pairwise cosine similarity](assets/Output_3.png)
+
+<p align="center"><sub><i>VADER assigns each sentence a compound sentiment score, and every pair of sentences is compared using bag-of-words cosine similarity. <a href="assets/Output_3.png">View full-size screenshot</a></i></sub></p>
 
 ---
 
@@ -47,8 +63,8 @@ Each phase builds on the ones before it. For example, NER runs on POS-tagged tok
 ### Installation
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/nltk-showcase.git
-cd nltk-showcase
+git clone https://github.com/YOUR_USERNAME/nltk-python.git
+cd nltk-python
 
 python -m venv .venv
 source .venv/bin/activate        # Windows: .venv\Scripts\activate
@@ -63,6 +79,18 @@ python nltk_showcase.py
 ```
 
 The first run downloads the required NLTK data packages automatically, so it can take a few extra minutes. Later runs reuse the downloaded data and start almost instantly.
+
+### Project structure
+
+```text
+nltk-python/
+├── assets/
+│   ├── Output_1.png
+│   ├── Output_2.png
+│   └── Output_3.png
+├── nltk_showcase.py
+└── README.md
+```
 
 ---
 
