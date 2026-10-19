@@ -63,7 +63,7 @@ Each phase builds on the ones before it. For example, NER runs on POS-tagged tok
 ### Installation
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/nltk-python.git
+git clone https://github.com/DJamesSmith/nltk-python.git
 cd nltk-python
 
 python -m venv .venv
